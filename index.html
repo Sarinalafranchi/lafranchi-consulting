@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lafranchi Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background: #fdfaf6;
       color: #2e2e2e;
       margin: 0;
@@ -14,31 +17,38 @@
     }
     header {
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 60px 20px 30px;
     }
     header img {
-      width: 120px;
-      margin-bottom: 20px;
+      width: 140px;
+      margin-bottom: 15px;
     }
     header h1 {
       color: #b89c67;
-      font-size: 36px;
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
       margin: 0;
+    }
+    header p.slogan {
+      font-size: 18px;
+      color: #555;
+      margin-top: 10px;
     }
     nav {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 25px;
     }
     nav a {
       color: #b89c67;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 15px;
     }
     section {
       display: none;
-      max-width: 800px;
-      margin: 40px auto;
+      max-width: 900px;
+      margin: 50px auto;
       padding: 0 20px;
     }
     section.active {
@@ -46,23 +56,57 @@
     }
     h2 {
       color: #b89c67;
-      font-size: 28px;
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
+    }
+    p, li {
+      font-size: 17px;
+      line-height: 1.6;
     }
     ul {
       list-style: none;
       padding-left: 0;
     }
     li {
-      margin: 8px 0;
+      margin: 10px 0;
     }
-    footer {
+    .hero {
       text-align: center;
-      font-size: 14px;
-      background: #f3f1ec;
-      padding: 30px 20px;
-      margin-top: 60px;
+      background: #fff;
+      padding: 40px 20px 60px;
+    }
+    .hero h2 {
+      font-size: 26px;
+      color: #2e2e2e;
+      font-family: 'Playfair Display', serif;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 15px auto 0;
+      color: #444;
+    }
+    .why-box {
+      background: #fff;
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .why-box h3 {
+      font-size: 24px;
+      color: #b89c67;
+      font-family: 'Playfair Display', serif;
+    }
+    .why-box ul {
+      margin-top: 15px;
+    }
+    .why-box li::before {
+      content: "✓ ";
+      color: #b89c67;
+      margin-right: 5px;
     }
     .placeholder {
       width: 120px;
@@ -76,13 +120,51 @@
       font-weight: bold;
       margin: 20px auto;
     }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #b89c67;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      background: #f3f1ec;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+    .legal-links {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    .legal-links a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 8px;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <img src="lafranchi-logo-weisshintergrund-fix.png" alt="Lafranchi Logo" />
     <h1>Lafranchi Consulting</h1>
+    <p class="slogan">Klarheit, Struktur und menschliche Stärke – für Unternehmen und Menschen in Bewegung</p>
     <nav>
       <a href="#" onclick="showPage('start')">Start</a>
       <a href="#" onclick="showPage('unternehmen')">Für Unternehmen</a>
@@ -94,58 +176,22 @@
   </header>
 
   <section id="start" class="active">
-    <h2>Beratung mit Wirkung</h2>
-    <p>Für Unternehmen. Für Menschen. Für Beziehungen.</p>
+    <div class="hero">
+      <h2>Ich bringe Struktur in Prozesse – und Vertrauen in Beziehungen.</h2>
+      <p>Als erfahrene HR-Beraterin und Coach begleite ich Unternehmen, Führungskräfte und Privatpersonen mit Klarheit, Empathie und Wirksamkeit. Ob im Aufbau effizienter HR-Strukturen, in persönlichen Veränderungsprozessen oder bei der Klärung von Konflikten – ich arbeite zielgerichtet, menschlich und diskret.</p>
+    </div>
+    <div class="why-box">
+      <h3>Warum Lafranchi Consulting?</h3>
+      <ul>
+        <li>Über 15 Jahre Erfahrung im operativen und strategischen HR</li>
+        <li>Beratungsstil: direkt, strukturiert, menschlich</li>
+        <li>Erfahrung in Konzern, KMU und Start-up-Umfeld</li>
+        <li>Psychologisches Fachwissen & Coachingerfahrung</li>
+        <li>Schnelle Erfassung von Dynamiken und Lösungen</li>
+        <li>Verlässlicher Sparringspartner auf Augenhöhe</li>
+      </ul>
+    </div>
   </section>
-
-  <section id="unternehmen">
-    <h2>Für Unternehmen</h2>
-    <ul>
-      <li>• Payroll & Personaladministration</li>
-      <li>• HR-Leitung ad interim</li>
-      <li>• Aufbau & Optimierung von HR-Prozessen</li>
-    </ul>
-  </section>
-
-  <section id="coaching">
-    <h2>Coaching & Konfliktlösung</h2>
-    <ul>
-      <li>• Einzelcoaching für Führungskräfte</li>
-      <li>• Team-Coaching & Mediation</li>
-      <li>• Struktur- & Rollenklärung in Organisationen</li>
-    </ul>
-  </section>
-
-  <section id="privat">
-    <h2>Für Privatpersonen & Paare</h2>
-    <ul>
-      <li>• Lebensberatung & Standortklärung</li>
-      <li>• Paarberatung & Kommunikation</li>
-      <li>• Ressourcen stärken – neue Wege finden</li>
-      <li style="font-size: 13px; font-style: italic;">* keine psychotherapeutische Behandlung</li>
-    </ul>
-  </section>
-
-  <section id="ueber">
-    <h2>Über mich</h2>
-    <div class="placeholder">Foto folgt</div>
-    <p>Ich bin Sarina Lafranchi, Gründerin von Lafranchi Consulting. Mit fundiertem Wissen,
-      viel Lebenserfahrung und einem feinen Gespür für Menschen begleite ich Unternehmen,
-      Teams, Paare und Einzelpersonen. Mein Anspruch ist es, nachhaltige Lösungen zu schaffen –
-      mit Klarheit, Herz und Substanz.</p>
-    <p>Ob HR-Prozesse, Führungscoaching oder Beziehungsfragen: Ich arbeite ressourcenorientiert,
-      pragmatisch und immer auf Augenhöhe. In der Begleitung von Privatpersonen und Paaren
-      agiere ich beratend – nicht therapeutisch – und biete Raum für Entwicklung, Reflexion und Veränderung.</p>
-  </section>
-
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Email: <a href="mailto:info@lafranchi-consulting.ch">info@lafranchi-consulting.ch</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Lafranchi Consulting. Alle Rechte vorbehalten.</p>
-  </footer>
 
   <script>
     function showPage(id) {
@@ -153,6 +199,5 @@
       document.getElementById(id).classList.add("active");
     }
   </script>
-
 </body>
 </html>
