@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lafranchi Consulting</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -15,19 +14,20 @@
     }
     header {
       text-align: center;
-      padding: 30px 20px 10px;
+      padding: 20px 20px 10px;
       background-color: #fff;
       border-bottom: 1px solid #eee;
     }
     header .logo {
-      width: 180px;
-      margin-bottom: 10px;
+      width: 160px;
+      height: auto;
+      margin: 0 auto;
     }
     nav {
-      margin-top: 15px;
+      margin-top: 10px;
     }
     nav a {
-      margin: 0 12px;
+      margin: 0 10px;
       text-decoration: none;
       color: #b89c67;
       font-weight: 600;
@@ -40,13 +40,13 @@
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
+      text-align: center;
     }
     h1 {
       font-family: 'Playfair Display', serif;
       color: #b89c67;
-      font-size: 34px;
-      text-align: center;
-      margin-bottom: 50px;
+      font-size: 28px;
+      margin-bottom: 40px;
     }
     .grid {
       display: flex;
@@ -94,6 +94,11 @@
       color: #888;
       text-decoration: none;
       margin: 0 8px;
+    }
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
     }
   </style>
 </head>
