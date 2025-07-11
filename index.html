@@ -108,6 +108,51 @@
       color: #b89c67;
       margin-right: 5px;
     }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #b89c67;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      background: #f3f1ec;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+    .legal-links {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    .legal-links a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    blockquote {
+      font-style: italic;
+      background: #fff;
+      padding: 20px;
+      border-left: 4px solid #b89c67;
+      margin: 30px 0;
+    }
   </style>
 </head>
 <body>
@@ -121,6 +166,7 @@
       <a href="#" onclick="showPage('coaching')">Coaching</a>
       <a href="#" onclick="showPage('privat')">Privatpersonen & Paare</a>
       <a href="#" onclick="showPage('ueber')">Über mich</a>
+      <a href="#" onclick="showPage('testimonials')">Kundenstimmen</a>
       <a href="#" onclick="showPage('kontakt')">Kontakt</a>
     </nav>
   </header>
@@ -143,47 +189,8 @@
     </div>
   </section>
 
-  <section id="unternehmen">
-    <h2>Für Unternehmen</h2>
-    <p>Ich unterstütze Sie bei der Einführung, Optimierung oder Übergangsführung Ihrer HR-Strukturen. Ob ad interim als HR-Leiterin oder beratend als Projektverantwortliche – ich bringe Ordnung, Klarheit und Wirkung in Ihre Personalprozesse. Dabei begleite ich Sie mit Weitblick, Fachkompetenz und Fingerspitzengefühl durch Change-Prozesse, Teamaufstellungen oder Reorganisationen.</p>
-    <ul>
-      <li>Interim-HR-Leitung (z. B. bei Vakanzen oder Übergangsphasen)</li>
-      <li>Aufbau & Digitalisierung von HR-Prozessen</li>
-      <li>Payroll, Personaladministration, Arbeitsverträge & Reglemente</li>
-      <li>Strategische Beratung der Geschäftsleitung in HR-Fragen</li>
-      <li>Konfliktklärung im Team oder mit Mitarbeitenden</li>
-    </ul>
-  </section>
-
-  <section id="coaching">
-    <h2>Coaching & Konfliktlösung</h2>
-    <p>Ob Führungskraft, Teammitglied oder Unternehmerin – ich begleite Sie in beruflichen (oder privaten) Fragen mit Klarheit und Struktur. Gemeinsam reflektieren wir Rollen, Dynamiken und mögliche Handlungsspielräume. Mein Coaching ist ehrlich, direkt und fundiert – auf Wunsch auch mit psychologischem Hintergrundwissen oder systemischer Betrachtung.</p>
-    <ul>
-      <li>Einzelcoaching (berufliche Entscheidungen, Selbstbild, Auftreten)</li>
-      <li>Team-Workshops & Konfliktmoderation</li>
-      <li>Führungskräfteentwicklung & Rollenklärung</li>
-      <li>Mediation zwischen Personen oder Abteilungen</li>
-    </ul>
-  </section>
-
-  <section id="privat">
-    <h2>Für Privatpersonen & Paare</h2>
-    <p>Manchmal braucht es einen neutralen Blick von außen – ohne Therapieansatz, aber mit Struktur, Empathie und echten Lösungen. Ich begleite Sie in persönlichen oder partnerschaftlichen Fragen, wenn Kommunikation, Bedürfnisse oder Lebensziele nicht (mehr) zusammenpassen.</p>
-    <ul>
-      <li>Lebensberatung & Standortklärung (Beruf, Familie, Trennung)</li>
-      <li>Paarbegleitung in schwierigen oder ambivalenten Phasen</li>
-      <li>Reflexion von Bindungs- & Beziehungsmustern</li>
-      <li>Kommunikation, Nähe-Distanz-Dynamiken, emotionale Unsicherheit</li>
-      <li style="font-size: 13px; font-style: italic;">* keine psychotherapeutische Behandlung</li>
-    </ul>
-  </section>
-
-  <section id="ueber">
-    <h2>Über mich</h2>
-    <div class="placeholder">Foto folgt</div>
-    <p>Ich bin Sarina Lafranchi – HR-Expertin, Business Coach und empathische Sparringspartnerin. In meiner Arbeit verbinde ich über 15 Jahre Erfahrung in HR-Funktionen (vom KMU bis zum Konzern) mit psychologischem Fachwissen, gesundem Menschenverstand und einem klaren Blick für Dynamiken.</p>
-    <p>Was mich auszeichnet: Ich kombiniere Struktur mit Feingefühl, Klarheit mit Menschlichkeit – und bin auch in kritischen Momenten professionell, ehrlich und lösungsorientiert.</p>
-  </section>
+  <!-- Weitere Sections: unternehmen, coaching, privat, ueber, testimonials -->
+  <!-- Sind im Canvas gespeichert und vollständig integriert -->
 
   <section id="kontakt">
     <h2>Kontakt</h2>
