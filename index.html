@@ -7,13 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    * {box-sizing: border-box;}
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
       background: #fdfaf6;
       color: #2e2e2e;
-      line-height: 1.6;
+      margin: 0;
     }
     header {
       text-align: center;
@@ -43,35 +41,43 @@
       margin: 40px auto;
       padding: 0 20px;
     }
-    h2 {
+    h1 {
       font-family: 'Playfair Display', serif;
       color: #b89c67;
-      font-size: 28px;
-      margin-top: 50px;
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 50px;
     }
-    .custom-list {
-      list-style: none;
-      padding-left: 0;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
     }
-    .custom-list li {
-      margin-bottom: 12px;
-      position: relative;
-      padding-left: 25px;
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 30px 20px;
+      width: 280px;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
     }
-    .custom-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      top: 0;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
       color: #b89c67;
-      font-weight: bold;
+      margin-top: 10px;
     }
-    blockquote {
-      background: #fff;
-      padding: 20px 30px;
-      border-left: 5px solid #b89c67;
-      margin-bottom: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    .card p {
+      font-size: 15px;
+      color: #444;
     }
     footer {
       text-align: center;
@@ -95,78 +101,30 @@
 <header>
   <img src="lafranchi-logo.png" alt="Lafranchi Logo" class="logo">
   <nav>
-    <a href="#start">Start</a>
-    <a href="#coaching">Privatpersonen</a>
-    <a href="#unternehmen">Für Unternehmen</a>
-    <a href="#ueber">Über mich</a>
-    <a href="#testimonials">Kundenstimmen</a>
-    <a href="#insights">Insights</a>
+    <a href="index.html">Start</a>
+    <a href="unternehmen.html">Für Unternehmen</a>
+    <a href="coaching.html">Coaching & Beratung</a>
+    <a href="ueber.html">Über mich</a>
+    <a href="insights.html">Insights</a>
+    <a href="kontakt.html">Kontakt</a>
   </nav>
 </header>
 <main>
-  <section id="start">
-    <h2>Struktur in Prozesse. Vertrauen in Beziehungen.</h2>
-    <p>Ich unterstütze Unternehmen, Führungskräfte und Privatpersonen mit Klarheit, Erfahrung und psychologischer Tiefe – lösungsorientiert, diskret und effizient.</p>
-  </section>
-
-  <section id="coaching">
-    <h2>Coaching & Beratung für Privatpersonen</h2>
-    <p>Ich begleite Menschen in schwierigen Lebenssituationen – beruflich wie privat. Ob bei Umbrüchen, Überforderung, Konflikten oder persönlichen Fragen: Ich biete einen vertrauensvollen, reflektierenden Rahmen, um neue Perspektiven zu entwickeln, Entlastung zu finden und handlungsfähig zu bleiben. Dabei verbinde ich psychologisches Fachwissen mit systemischer Klarheit und echter Empathie.</p>
-    <ul class="custom-list">
-      <li><strong>Einzelberatung:</strong> Trennungen, Selbstwert, Neuorientierung</li>
-      <li><strong>Begleitung in Krisen:</strong> Emotionale Belastung, Lebensumbrüche, Überforderung</li>
-      <li><strong>Berufliche Themen:</strong> Konflikte, Rollenreflexion, Entscheidungssituationen</li>
-      <li><strong>Familiäre Belastungen:</strong> Grenzen, Verstrickungen, Beziehungsmuster</li>
-      <li><strong>Systemische Perspektive:</strong> Tiefere Zusammenhänge erkennen und lösen</li>
-    </ul>
-  </section>
-
-  <section id="unternehmen">
-    <h2>Für Unternehmen</h2>
-    <p>Ich begleite Organisationen bei der Einführung, Optimierung oder interimistischen Führung von HR-Strukturen – klar, effizient und rechtssicher. Dabei betrachte ich HR nicht als rein administrative Funktion, sondern als strategischen Partner der Geschäftsleitung. Ich bringe Struktur, Entlastung und Fortschritt – von der Basis bis zur Führungsebene.</p>
-    <ul class="custom-list">
-      <li><strong>Interim-HR-Leitung:</strong> Vakanzüberbrückung, Change-Prozesse, Transformation</li>
-      <li><strong>HR-Systeme & Digitalisierung:</strong> Auswahl, Einführung & Schulung moderner Tools</li>
-      <li><strong>Personaladministration A–Z:</strong> Verträge, Reglemente, Lohnläufe, Ein-/Austritte, Zeugnisse</li>
-      <li><strong>Payroll-Management:</strong> Monats- & Jahresendverarbeitung, Schnittstellen</li>
-      <li><strong>Employer Branding:</strong> Arbeitgeberpositionierung, Karriereseiten, EVP</li>
-      <li><strong>M&A / Firmenaufbau:</strong> HR-seitige Begleitung bei Fusionen & Neugründungen</li>
-      <li><strong>Starter-Paket für Start-ups:</strong> rechtssichere HR-Grundstruktur & Prozesse ab Tag 1</li>
-      <li><strong>Beratung der Geschäftsleitung:</strong> HR-Strategie, Führung, Unternehmenskultur</li>
-      <li><strong>Team für operative Entlastung:</strong> Payroll, Personaladmin & Jahresendverarbeitung</li>
-    </ul>
-  </section>
-
-  <section id="ueber">
-    <h2>Über mich</h2>
-    <p>Ich bin Sarina Lafranchi – HR-Expertin, Business Coach und empathische Sparringspartnerin mit fundierter wirtschaftlicher und psychologischer Ausbildung. Mit über 15 Jahren Erfahrung in Konzernen, KMU und Start-ups bringe ich sowohl strategisches als auch operatives HR-Know-how mit. Ich bin spezialisiert auf Aufbau- und Veränderungsprozesse, Führungsthemen und systemische Konfliktklärung.</p>
-    <p>Ich denke vernetzt, handle lösungsorientiert und setze HR als Hebel für wirtschaftlichen und kulturellen Erfolg ein. Dabei kombiniere ich psychologisches Fachwissen mit betriebswirtschaftlichem Verständnis – eine seltene, aber heute essenzielle Kombination. Ich bin keine Theoretikerin, sondern komme aus der Praxis: Ich kenne Budgetdruck, Führungsdynamiken und die Realität des Schweizer Arbeitsmarkts.</p>
-    <p>Ich bin in einer Generation aufgewachsen, die Digitalisierung lebt – das macht mich zur Brückenbauerin zwischen analogen Strukturen und neuen Arbeitswelten. Ich verstehe Gen Z genauso wie Geschäftsleitungslogiken. Mein Anspruch: Klarheit, Struktur und Wirksamkeit – menschlich und wirtschaftlich.</p>
-    <p>Auch ausserhalb der Geschäftswelt begleite ich Menschen mit psychologischem Feingefühl. Wenn es privat herausfordernd wird – sei es in Beziehungen, bei Trennungen, familiären Themen oder persönlichen Krisen – biete ich einen vertrauensvollen Rahmen zur Reflexion und Neuausrichtung. Ich höre zu, frage nach und helfe, neue Perspektiven zu finden. Mein Ziel: Entlastung, Erkenntnis und echte Veränderung.</p>
-  </section>
-
-  <section id="testimonials">
-    <h2>Kundenstimmen</h2>
-    <blockquote>"Sarina Lafranchi hat unser HR in wenigen Wochen komplett neu strukturiert. Selten habe ich jemanden erlebt, der so schnell erkennt, woran es hakt – und dann pragmatisch Lösungen umsetzt."<br><strong>– Geschäftsführer eines Tech-Start-ups</strong></blockquote>
-    <blockquote>"In einer schwierigen Führungssituation hat Sarina mit ihrer ruhigen, klaren Art die Dynamik sofort verstanden und uns geholfen, eine professionelle und menschliche Lösung zu finden."<br><strong>– Bereichsleiterin eines Industriekonzerns</strong></blockquote>
-    <blockquote>"Ich habe bei ihr ein Coaching gemacht, weil ich beruflich feststeckte. Ich konnte endlich wieder klar denken und habe innert 2 Monaten den Wechsel geschafft. Sehr empfehlenswert."<br><strong>– Privatkundin</strong></blockquote>
-  </section>
-
-  <section id="insights">
-    <h2>Insights</h2>
-    <article>
-      <h3>5 HR-Fehler bei KMU – und wie Sie sie vermeiden</h3>
-      <p>Erfahren Sie, welche typischen Stolperfallen KMU in der Personalführung erleben – und welche Strategien wirklich funktionieren.</p>
-    </article>
-    <article>
-      <h3>Vom Chaos zur Struktur: Ein Payroll-Projekt aus der Praxis</h3>
-      <p>So konnte ein wachsendes Unternehmen innert 3 Wochen seine Lohnprozesse effizient und gesetzeskonform gestalten.</p>
-    </article>
-    <article>
-      <h3>Führung trifft Gen Z: Was heute anders funktioniert</h3>
-      <p>Was bedeutet moderne Führung in einer Welt, in der Sinn, Flexibilität und Technologie Hand in Hand gehen müssen?</p>
-    </article>
-  </section>
+  <h1>Klarheit, Struktur und menschliche Stärke – für Unternehmen und Menschen in Bewegung</h1>
+  <div class="grid">
+    <a href="unternehmen.html" class="card">
+      <h3>Für Unternehmen</h3>
+      <p>Interim HR, Payroll, Digitalisierung und strategische Beratung mit Weitblick.</p>
+    </a>
+    <a href="coaching.html" class="card">
+      <h3>Coaching & Beratung</h3>
+      <p>Begleitung in beruflichen und privaten Umbrüchen – empathisch, klar, systemisch fundiert.</p>
+    </a>
+    <a href="insights.html" class="card">
+      <h3>Insights & Fachwissen</h3>
+      <p>Impulse, Artikel und Gedanken zu HR, Führung und psychologischer Praxis.</p>
+    </a>
+  </div>
 </main>
 <footer>
   <p>© 2025 Lafranchi Consulting</p>
