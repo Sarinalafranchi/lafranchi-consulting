@@ -1,54 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HR & Organisation – Lafranchi Consulting</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    .image-banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin-bottom: 40px;
+    }
+    .section {
+      max-width: 960px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+    .section h2 {
+      color: #b89c67;
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .section p, .section li {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .symbol-image {
+      display: block;
+      max-width: 140px;
+      margin: 0 auto 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="images/lafranchi-logo.png" class="logo" alt="Logo" />
+    <img src="lafranchi-logo.png" alt="Lafranchi Consulting Logo" class="logo">
     <nav>
       <a href="index.html">Start</a>
       <a href="unternehmen.html">HR & Organisation</a>
       <a href="coaching.html">Coaching & Entwicklung</a>
-      <a href="methode.html">Lafranchi-Methode®</a>
       <a href="ueber.html">Über mich</a>
-      <a href="kontakt.html">Kontakt</a>
       <a href="blog.html">Insights</a>
+      <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
-  <img src="images/unternehmen-banner.jpg" class="image-banner" alt="HR Banner" />
+
+  <img src="hr-banner.jpg" alt="Symbolbild HR & Organisation" class="image-banner">
+
   <main>
-    <h1>HR & Organisation</h1>
-    <section>
-      <img src="images/icon-leistungen.jpg" class="symbol-image" alt="Leistungen Icon" />
+    <section class="section">
+      <h1>Effiziente HR-Prozesse. Starke Strukturen. Verlässliche Partnerin.</h1>
+      <p>Ich unterstütze Start-ups, KMU und wachsende Unternehmen beim Aufbau, der Optimierung und operativen Umsetzung von HR-Prozessen – mit Erfahrung, Systematik und Gespür für Menschen.</p>
+    </section>
+
+    <section class="section">
+      <img src="icon-hr.png" alt="Icon HR Leistungen" class="symbol-image">
       <h2>Leistungen</h2>
       <ul>
-        <li>Personaladministration A–Z: Verträge, Ein-/Austritte, Löhne, Zeugnisse, Versicherungen</li>
-        <li>Payroll: Quellensteuer, BVG, KTG, UVG etc.</li>
-        <li>Starter-Paket: HR-Abteilung aufbauen & gesetzeskonform starten</li>
-        <li>HR-Prozesse, Richtlinien & Vorlagen</li>
-        <li>Rechtskonforme Kommunikation mit Ämtern & Sozialpartnern</li>
-        <li>HR-Leitung ad interim (operativ & strategisch)</li>
+        <li>Personaladministration A bis Z (Verträge, Ein-/Austritte, Zeugnisse etc.)</li>
+        <li>Payroll inkl. Quellensteuer, BVG, KTG, UVG</li>
+        <li>Starter-Paket für Start-ups: HR-Aufbau & gesetzeskonformer Start</li>
+        <li>Aufbau von HR-Prozessen & Vorlagen</li>
+        <li>Kommunikation mit Ämtern & Sozialpartnern</li>
         <li>Digitalisierung & Systemwahl</li>
+        <li>HR-Leitung ad interim – operativ & strategisch</li>
       </ul>
     </section>
-    <section>
-      <img src="images/icon-mehrwert.jpg" class="symbol-image" alt="Mehrwert Icon" />
+
+    <section class="section">
       <h2>Ihr Mehrwert</h2>
       <ul>
-        <li>15+ Jahre Erfahrung in KMU, Konzern und Start-up</li>
-        <li>Strukturierte, lösungsorientierte Umsetzung</li>
-        <li>Erfahrung mit allen gängigen HR-Systemen</li>
-        <li>Verlässliche, diskrete Zusammenarbeit</li>
+        <li>15+ Jahre HR-Erfahrung in Start-up, KMU & Konzern</li>
+        <li>Schnelle Analyse & strukturierte Umsetzung</li>
+        <li>Rechtskonformität & Diskretion garantiert</li>
+        <li>Flexibel, pragmatisch, unternehmerisch denkend</li>
       </ul>
     </section>
   </main>
+
   <footer>
     © 2025 Lafranchi Consulting
+    <div class="legal-links">
+      <a href="#">Datenschutz</a>
+      <a href="#">Impressum</a>
+    </div>
   </footer>
 </body>
 </html>
