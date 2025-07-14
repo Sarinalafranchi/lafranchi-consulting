@@ -7,17 +7,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fefdf9;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      height: 60px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #b89c67;
+      font-weight: 600;
+    }
     main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px 80px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px 100px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     h1 {
       color: #b89c67;
       font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 16px;
+      font-size: 17px;
       line-height: 1.6;
     }
     form {
@@ -27,7 +53,7 @@
       gap: 15px;
     }
     input, textarea {
-      padding: 10px;
+      padding: 12px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -36,12 +62,38 @@
       background-color: #b89c67;
       color: white;
       border: none;
-      padding: 12px;
+      padding: 14px;
       font-size: 16px;
       border-radius: 4px;
       cursor: pointer;
     }
+    footer {
+      background-color: #f6f4f1;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #888;
+    }
+    .legal-links {
+      margin-top: 10px;
+    }
+    .legal-links a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 8px;
+    }
     @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
       main {
         padding: 0 15px 60px;
       }
@@ -63,7 +115,6 @@
 <main>
   <h1>Kontakt</h1>
   <p>Du möchtest mehr erfahren oder ein Erstgespräch vereinbaren? Schreib mir – ich melde mich persönlich und zeitnah zurück.</p>
-
   <form action="https://formspree.io/f/your-form-id" method="POST">
     <input type="text" name="name" placeholder="Dein Name" required>
     <input type="email" name="email" placeholder="Deine E-Mail" required>
