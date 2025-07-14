@@ -1,129 +1,55 @@
-* {
-  box-sizing: border-box;
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fdfaf6;
+  color: #2e2e2e;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #fdfaf6;
-  color: #2e2e2e;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #ffffff;
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-
-header .logo {
-  width: 180px;
-  margin-bottom: 10px;
+.logo {
+  width: 140px;
+  margin: 30px auto 10px;
+  display: block;
 }
 
 nav {
-  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 nav a {
+  color: #b89c67;
   margin: 0 12px;
   text-decoration: none;
-  color: #b89c67;
   font-weight: 600;
   font-size: 15px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.hero {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  margin-bottom: 15px;
-  color: #b89c67;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #444;
-}
-
-.intro {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.05);
-  margin-bottom: 50px;
-}
-
-.intro h2 {
-  font-family: 'Playfair Display', serif;
-  color: #b89c67;
-  margin-bottom: 15px;
-}
-
-.intro ul {
-  padding-left: 20px;
-}
-
-.intro li {
-  margin-bottom: 10px;
-}
-
-.insights-preview h2 {
-  font-family: 'Playfair Display', serif;
-  color: #b89c67;
-  margin-bottom: 20px;
-}
-
-.insights-preview article {
-  background: #fff;
-  padding: 20px 25px;
-  margin-bottom: 20px;
-  border-left: 4px solid #b89c67;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.insights-preview h3 {
-  font-size: 18px;
-  color: #2e2e2e;
-  margin-bottom: 8px;
-}
-
-.insights-preview p {
-  color: #555;
-  font-size: 16px;
 }
 
 footer {
   text-align: center;
   font-size: 14px;
   background: #f3f1ec;
-  padding: 25px 20px;
+  padding: 30px 20px;
   margin-top: 60px;
 }
 
 .legal-links {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .legal-links a {
   color: #888;
   text-decoration: none;
   margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+  .logo {
+    width: 100px;
+  }
 }
