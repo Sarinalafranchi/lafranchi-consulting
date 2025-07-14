@@ -1,1 +1,91 @@
-/* Full CSS content for the site design */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfaf6;
+  color: #2e2e2e;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #b89c67;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+footer {
+  background: #f3f1ec;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  border-top: 1px solid #e4e2dc;
+}
+
+.legal-links {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.legal-links a {
+  color: #888;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsives Design */
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kern-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .profilbild {
+    float: none;
+    display: block;
+    margin: 0 auto 30px;
+  }
+}
