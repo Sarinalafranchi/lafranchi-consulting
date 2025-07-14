@@ -89,18 +89,16 @@ img {
     margin: 0 auto 30px;
   }
 }
-/* Zentriertes und größeres Logo nur auf Startseite */
-.startseite .logo-container {
-  text-align: center;
-  margin: 40px 0 20px 0;
-}
-
-.startseite .logo-container img {
-  max-width: 280px; /* größer als Standard */
-  height: auto;
-}
-
-/* Standardgröße für andere Seiten */
-.logo-container img {
+/* Standardgröße auf Unterseiten */
+.logo {
   max-width: 180px;
+  display: block;
+  margin: 20px auto;
 }
+
+/* Noch größeres, zentriertes Logo auf Startseite */
+.startseite .logo {
+  max-width: 380px;
+  margin: 60px auto 40px auto;
+}
+
