@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lafranchi Consulting</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lafranchi Consulting – Klarheit, Struktur & Tiefe</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf6;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      height: 60px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #b89c67;
+      font-weight: 600;
+    }
+    .hero {
+      background-image: url('hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: #2e2e2e;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      color: #b89c67;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px 80px;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .section h2 {
+      color: #b89c67;
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+    }
+    .section ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+    .section li::marker {
+      color: #b89c67;
+    }
+    footer {
+      background-color: #f6f4f1;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #888;
+    }
+    .legal-links {
+      margin-top: 10px;
+    }
+    .legal-links a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -19,34 +98,33 @@
     <a href="kontakt.html">Kontakt</a>
   </nav>
 </header>
-
-<main style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
-  <h1 style="color:#b89c67; font-family: 'Playfair Display', serif;">Lafranchi Consulting</h1>
-  <p style="font-size:17px; line-height:1.6;">Struktur, Klarheit und Tiefe – für Unternehmen und Menschen in Bewegung.</p>
-
-  <section style="margin-top: 40px;">
-    <h2 style="color:#b89c67; font-family:'Playfair Display', serif;">Womit ich Sie unterstützen kann</h2>
-    <ul style="font-size:16px; padding-left: 20px; line-height: 1.7;">
-      <li><strong>HR-Leitung ad Interim</strong> – Führung und Expertise für KMU & Startups</li>
-      <li><strong>Aufbau & Optimierung der HR-Abteilung</strong> – gesetzeskonform & effizient</li>
-      <li><strong>Payroll & Personaladministration</strong> – verlässlich, diskret, aus einer Hand</li>
-      <li><strong>Coaching & psychologische Beratung</strong> – für Menschen in privaten oder beruflichen Umbrüchen</li>
-      <li><strong>Klärungshilfe & Konfliktmoderation</strong> – empathisch, strukturiert, pragmatisch</li>
+<section class="hero">
+  <h1>Klarheit, Struktur und Tiefe</h1>
+  <p>Ich unterstütze Unternehmen und Privatpersonen mit durchdachten HR-Strukturen, Coaching mit Tiefgang und einer Methodik, die wirkt – professionell, empathisch und konfrontativ.</p>
+</section>
+<main>
+  <section class="section">
+    <h2>Womit ich Sie unterstützen kann</h2>
+    <ul>
+      <li>HR-Leitung ad Interim & Sparring für Führungskräfte</li>
+      <li>Aufbau & Optimierung Ihrer HR-Abteilung</li>
+      <li>Personaladministration & Payroll (Teamlösung)</li>
+      <li>Coaching & psychologische Beratung (privat & beruflich)</li>
+      <li>Konfliktlösung & systemische Klärung</li>
+      <li>Starterpakete für Startups – rechtskonform & effizient</li>
     </ul>
   </section>
-
-  <section style="margin-top: 60px;">
-    <h2 style="color:#b89c67; font-family:'Playfair Display', serif;">Warum Lafranchi Consulting?</h2>
-    <ul style="font-size:16px; padding-left: 20px; line-height: 1.7;">
-      <li>Über 15 Jahre HR-Erfahrung (Konzern, KMU, Startups)</li>
-      <li>Psychologisches Fachwissen & systemisches Denken</li>
-      <li>Beratungsstil: direkt, strukturiert, menschlich</li>
-      <li>Verständnis für Generation Z & digitale HR-Prozesse</li>
-      <li>Lafranchi-Methode® – KERN: Klarsicht, Emotion, Richtung, Nachhaltigkeit</li>
+  <section class="section">
+    <h2>Warum Lafranchi Consulting?</h2>
+    <ul>
+      <li>Über 15 Jahre HR-Erfahrung – Konzern, KMU & Startups</li>
+      <li>Psychologie, Coaching & systemisches Denken</li>
+      <li>Digital, agil, menschlich – Verständnis für Generation Z</li>
+      <li>Die Lafranchi-Methode<sup>®</sup> – KERN: Klarsicht, Emotion, Richtung, Nachhaltigkeit</li>
+      <li>Strukturiert, empathisch, direkt – mit Wirkung</li>
     </ul>
   </section>
 </main>
-
 <footer>
   <p>© 2025 Lafranchi Consulting</p>
   <div class="legal-links">
