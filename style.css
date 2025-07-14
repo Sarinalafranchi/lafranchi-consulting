@@ -5,13 +5,22 @@ body {
   color: #2e2e2e;
 }
 
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eae6df;
+}
+
 .logo {
-  height: 60px;
+  height: 70px;
 }
 
 nav {
   display: flex;
-  gap: 18px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -25,6 +34,97 @@ nav a {
 
 nav a:hover {
   color: #8a6f3f;
+}
+
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  color: #b89c67;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px 80px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  color: #b89c67;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.section li::marker {
+  color: #b89c67;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.icon-box {
+  flex: 1 1 280px;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform 0.2s ease;
+  max-width: 300px;
+}
+
+.icon-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.icon-box img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.icon-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
 }
 
 footer {
@@ -46,13 +146,6 @@ footer {
   margin: 0 8px;
 }
 
-main img, section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-}
-
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -64,8 +157,15 @@ main img, section img {
   }
 
   .logo {
-    height: 48px;
+    height: 54px;
   }
 
   footer {
     font-size: 13px;
+    padding: 25px 15px;
+  }
+
+  .icon-box {
+    flex: 1 1 100%;
+  }
+}
