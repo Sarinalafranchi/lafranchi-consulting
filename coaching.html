@@ -43,16 +43,26 @@
     }
 
     .hero {
-      background: url('coaching-banner.jpg') center center/cover no-repeat;
-      color: #b89c67;
-      padding: 200px 20px 100px;
+      background: url('coaching-banner.jpg') center top 30%/cover no-repeat;
+      color: white;
+      padding: 190px 20px 80px;
       text-align: center;
+      position: relative;
     }
 
-    .hero h1 {
+    .hero-text {
       font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .section-title {
+      text-align: center;
       font-size: 42px;
-      margin-bottom: 30px;
+      font-family: 'Playfair Display', serif;
+      color: #b89c67;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
 
     .section {
@@ -61,20 +71,21 @@
       padding: 0 20px;
     }
 
-    .section h2 {
-      font-size: 26px;
-      color: #b89c67;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
     .section p {
       font-size: 17px;
       line-height: 1.7;
       color: #444;
       margin-bottom: 20px;
       text-align: center;
+    }
+
+    footer {
+      background: #f3f1ec;
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+      border-top: 1px solid #e4e4e4;
     }
   </style>
 </head>
@@ -92,8 +103,10 @@
   </header>
 
   <section class="hero">
-    <h1>Coaching & Entwicklung</h1>
+    <div class="hero-text">Klarheit, Konfrontation und echter Wandel</div>
   </section>
+
+  <h1 class="section-title">Coaching & Entwicklung</h1>
 
   <section class="section">
     <p>Ich begleite Menschen in Umbruchsituationen – beruflich, privat oder beides. Mit Tiefgang, Struktur und klarer Haltung. Keine Floskeln, sondern echte Veränderung.</p>
