@@ -2,10 +2,112 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lafranchi Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start – Lafranchi Consulting</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf6;
+      color: #2e2e2e;
+    }
+    header {
+      background-color: white;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+    .logo {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #b89c67;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .banner {
+      position: relative;
+    }
+    .banner img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    .banner-text {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    .banner-text h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .intro {
+      text-align: center;
+      padding: 40px 20px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .intro p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .tiles {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 20px 80px;
+      flex-wrap: wrap;
+    }
+    .tile {
+      flex: 1 1 300px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 30px 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease;
+    }
+    .tile:hover {
+      transform: translateY(-5px);
+    }
+    .tile img {
+      width: 90px;
+      margin-bottom: 20px;
+    }
+    .tile h3 {
+      color: #b89c67;
+      font-size: 22px;
+    }
+    footer {
+      background: #f3f1ec;
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+      border-top: 1px solid #e4e4e4;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,35 +122,31 @@
     </nav>
   </header>
 
-  <div class="hero-image">
-    <div class="hero-text">
+  <div class="banner">
+    <img src="banner-start.jpg" alt="Bannerbild Startseite">
+    <div class="banner-text">
       <h1>Ich begleite Unternehmen – strukturiert, menschlich und mit Biss.</h1>
     </div>
   </div>
 
-  <main>
-    <section class="intro">
-      <p>Willkommen bei Lafranchi Consulting – Ihrer Partnerin für professionelle HR-Lösungen, Coaching & Entwicklung sowie die praxiserprobte Lafranchi-Methode KERN. Ich unterstütze Sie pragmatisch, direkt und mit System.</p>
-    </section>
+  <div class="intro">
+    <p>Willkommen bei Lafranchi Consulting – Ihrer Partnerin für professionelle HR-Lösungen, Coaching & Entwicklung sowie die praxisbewährte Lafranchi-Methode KERN. Ich unterstütze Sie pragmatisch, direkt und mit System.</p>
+  </div>
 
-    <section class="tiles">
-      <div class="tile" onclick="location.href='unternehmen.html';">
-        <img src="icon-hr.jpeg" alt="HR & Organisation">
-        <h2>HR & Organisation</h2>
-      </div>
-      <div class="tile" onclick="location.href='coaching.html';">
-        <img src="icon-coaching.jpeg" alt="Coaching & Entwicklung">
-        <h2>Coaching & Entwicklung</h2>
-      </div>
-    </section>
-  </main>
+  <div class="tiles">
+    <a href="unternehmen.html" class="tile">
+      <img src="icon-hr.jpeg" alt="HR Icon">
+      <h3>HR & Organisation</h3>
+    </a>
+    <a href="coaching.html" class="tile">
+      <img src="icon-coaching.jpeg" alt="Coaching Icon">
+      <h3>Coaching & Entwicklung</h3>
+    </a>
+  </div>
 
   <footer>
-    © 2025 Lafranchi Consulting
-    <div class="legal-links">
-      <a href="#">Datenschutz</a>
-      <a href="#">Impressum</a>
-    </div>
+    © 2025 Lafranchi Consulting<br>
+    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
   </footer>
 </body>
 </html>
