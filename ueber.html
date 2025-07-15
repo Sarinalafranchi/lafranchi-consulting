@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Über mich – Lafranchi Consulting</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -36,43 +36,53 @@
     nav a:hover {
       text-decoration: underline;
     }
-    h1, h2, h3 {
+    h1, h2 {
       font-family: 'Playfair Display', serif;
     }
-    h1 {
-      color: #b89c67;
-      text-align: center;
-      margin-top: 60px;
+    .banner {
+      position: relative;
     }
-    .about-container {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: center;
-      gap: 50px;
-      max-width: 1200px;
+    .banner img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .section {
+      max-width: 1000px;
       margin: 60px auto;
       padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 40px;
     }
-    .about-text {
+    .section-text {
       flex: 1;
-      font-size: 18px;
+      min-width: 300px;
+    }
+    .section-text h1 {
+      font-size: 32px;
+      color: #b89c67;
+      margin-bottom: 20px;
+    }
+    .section-text p {
+      font-size: 17px;
       line-height: 1.8;
+      margin-bottom: 20px;
     }
-    .about-image {
-      flex: 0 0 300px;
-    }
-    .about-image img {
+    .profile-img {
+      flex-shrink: 0;
+      max-width: 300px;
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    blockquote {
-      font-style: italic;
-      font-size: 20px;
-      color: #6b6b6b;
+    .quote {
       text-align: center;
-      margin: 40px auto 0;
-      max-width: 800px;
+      font-style: italic;
+      font-size: 18px;
+      margin: 60px 20px 20px;
+      color: #555;
     }
     footer {
       background: #f3f1ec;
@@ -86,7 +96,7 @@
 </head>
 <body>
   <header>
-    <img src="lafranchi-logo.png" alt="Lafranchi Consulting Logo" class="logo">
+    <img src="lafranchi-logo.png" alt="Lafranchi Consulting Logo" class="logo" />
     <nav>
       <a href="index.html">Start</a>
       <a href="unternehmen.html">HR & Organisation</a>
@@ -97,30 +107,20 @@
     </nav>
   </header>
 
-  <h1>Über mich</h1>
-
-  <div class="about-container">
-    <div class="about-text">
-      <p>Als HR-Expertin mit eidg. Fachausweis verfüge ich über langjährige Erfahrung als HR-Managerin in KMU-Strukturen mit industriellem Hintergrund. Ich bin Berufsbildnerin und offizielle Prüfungsexpertin für das Qualifikationsverfahren der kaufmännischen Grundbildung – und bringe zusätzlich ein fundiertes psychologisches Verständnis mit, welches meine Arbeit auf allen Ebenen ergänzt und vertieft.</p>
-
-      <p>Ich verbinde Strategie mit Menschlichkeit, Systematik mit Einfühlungsvermögen. Ob Aufbau neuer Strukturen, Optimierung bestehender Prozesse oder die Begleitung individueller Veränderungsprozesse – ich bringe Klarheit, Konsequenz und Herz in jedes Projekt ein.</p>
-
-      <p>Ich verstehe mich nicht nur als Dienstleisterin, sondern als Sparringspartnerin auf Augenhöhe – direkt, ehrlich und wirkungsorientiert. Meine Kundinnen und Kunden schätzen meine Fähigkeit, das Wesentliche schnell zu erkennen und komplexe Situationen strukturiert zu lösen.</p>
-
-      <p>Meine Stärke liegt im Gesamtblick: Ich analysiere, hinterfrage, ordne neu – immer mit dem Ziel, echte Veränderung zu bewirken. Dabei nutze ich mein umfassendes Fachwissen, meine psychologische Tiefe sowie die erprobte Methodik meines eigenen KERN-Modells.</p>
-
-      <p>Was mich zusätzlich ausmacht: Ich bin ausgebildete Pianistin – und arbeite mit derselben Hingabe, Disziplin und Sensibilität wie in der Musik. Präzision und Emotion gehören für mich zusammen.</p>
-    </div>
-    <div class="about-image">
-      <img src="profilbild.jpg" alt="Profilbild Sarina Lafranchi">
-    </div>
+  <div class="banner">
+    <img src="ueber-banner.jpg" alt="Über mich Banner" />
   </div>
 
-  <blockquote>„Klarheit entsteht nicht durch Denken allein – sondern durch das mutige Hinschauen.“</blockquote>
+  <main>
+    <section class="section">
+      <div class="section-text">
+        <h1>Über mich</h1>
+        <p>Als zertifizierte HR-Managerin mit eidgenössischem Fachausweis bringe ich über 15 Jahre Erfahrung in der operativen und strategischen Personalarbeit mit – insbesondere im industriellen KMU-Umfeld.</p>
 
-  <footer>
-    © 2025 Lafranchi Consulting<br>
-    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
-  </footer>
-</body>
-</html>
+        <p>Meine fundierte Ausbildung im Bereich Psychologie sowie meine Tätigkeit als Prüfungsexpertin für das Qualifikationsverfahren (kaufmännische Richtung) erlauben es mir, tiefere Dynamiken zu erkennen, klar zu benennen und gezielt zu verändern.</p>
+
+        <p>Ich kombiniere Empathie mit Präzision, Konfrontation mit Fingerspitzengefühl – ob als externe Personalabteilung, in Veränderungsprozessen oder als persönlicher Sparringspartner.</p>
+
+        <p>Mein Anspruch: Nicht Symptome bekämpfen, sondern Ursachen beheben. Strukturiert, pragmatisch und lösungsorientiert.</p>
+
+        <p>Wenn Sie jemanden suchen, der wirklic
