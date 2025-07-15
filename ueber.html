@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Über mich – Lafranchi Consulting</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    .content {
-      max-width: 960px;
-      margin: 60px auto;
-      padding: 0 20px 60px;
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf6;
+      color: #2e2e2e;
     }
-    .content h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 32px;
+
+    header {
+      background-color: white;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    .logo {
+      width: 320px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
       color: #b89c67;
-      margin-bottom: 20px;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 15px;
     }
-    .profilbild {
-      float: right;
-      margin-left: 30px;
-      width: 200px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+    nav a:hover {
+      text-decoration: underline;
     }
-    .content p {
+
+    .hero {
+      background: url('ueber-banner.jpg') center center/cover no-repeat;
+      height: 420px;
+    }
+
+    .section {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      color: #b89c67;
+      margin-bottom: 30px;
+    }
+
+    .section p {
       font-size: 17px;
       line-height: 1.7;
-      color: #333;
+      color: #444;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -39,24 +76,20 @@
       <a href="index.html">Start</a>
       <a href="unternehmen.html">HR & Organisation</a>
       <a href="coaching.html">Coaching & Entwicklung</a>
+      <a href="methode.html">Lafranchi-Methode KERN</a>
       <a href="ueber.html">Über mich</a>
-      <a href="blog.html">Insights</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
-  <main class="content">
-    <h1>Sarina Lafranchi</h1>
-    <img src="profilbild.jpg" alt="Sarina Lafranchi" class="profilbild">
+  <div class="hero"></div>
 
-    <p>Ich bin HR-Generalistin, HR-Leiterin, Strategin, operative Umsetzerin, Coach, Sparringspartnerin und Beraterin in einem. Mein Stil ist direkt, klar, lösungsorientiert – und dabei menschlich, feinfühlig und loyal.</p>
-
-    <p>In meinen über 15 Jahren Erfahrung im HR-Bereich habe ich Start-ups aufgebaut, KMU begleitet und Konzernstrukturen verschlankt. Ich erkenne Muster, bevor andere es tun – und spreche Dinge an, die sonst keiner ausspricht. Das erfordert Mut – aber auch genau dieser Mut schafft Vertrauen und Veränderung.</p>
-
-    <p>Ich bin mit der digitalen Welt aufgewachsen, spreche die Sprache der Generation Z und kenne gleichzeitig die Realität von Führungsetagen und Geschäftsleitungen. Diese Brücke mache ich mir zunutze – in Projekten, in Coachings, in der Zusammenarbeit mit Menschen.</p>
-
-    <p>Meine Arbeit ist geprägt von Struktur und Intuition, Pragmatismus und Tiefgang. Ich biete keine Wohlfühl-Begleitung – sondern eine, die nachhaltig verändert.</p>
-  </main>
+  <section class="section">
+    <h1>Über mich</h1>
+    <p>Ich bin HR-Expertin mit über 15 Jahren Erfahrung in Start-ups, KMU und Konzernen – als Generalistin mit Gespür für Strukturen, Menschen und Lösungen.</p>
+    <p>Ich verfüge über einen eidg. Fachausweis im HR und bilde mich laufend weiter – unter anderem im Bereich Psychologie. Ich bin Berufsbildnerin und Prüfungsexpertin für das QV kaufmännischer Lernender. Nebenbei bin ich leidenschaftliche Pianistin – ein Ausgleich, der mich inspiriert und fokussiert.</p>
+    <p>Ich bin keine Theoretikerin. Ich gestalte. Ich bringe Ordnung, Klarheit und Ergebnisse – egal ob im Aufbau oder in der Optimierung bestehender HR-Strukturen. Und ich begleite Menschen, die bereit sind, an sich zu arbeiten – mit Tiefgang und Pragmatismus.</p>
+  </section>
 
   <footer>
     © 2025 Lafranchi Consulting
