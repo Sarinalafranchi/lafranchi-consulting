@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lafranchi Consulting</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
@@ -13,44 +13,49 @@
       background-color: #fdfaf6;
       color: #2e2e2e;
     }
+
     header {
       background-color: white;
       padding: 20px;
       border-bottom: 1px solid #eee;
       text-align: center;
     }
+
     .logo {
       width: 200px;
       margin-bottom: 10px;
     }
+
     nav {
       margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
+
     nav a {
       color: #b89c67;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 10px;
       font-weight: 600;
       font-size: 15px;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
+
     .banner {
       position: relative;
     }
+
     .banner img {
       width: 100%;
       max-height: 500px;
       object-fit: cover;
     }
+
     .banner-text {
       position: absolute;
       bottom: 60px;
@@ -60,7 +65,9 @@
       font-size: 34px;
       font-family: 'Playfair Display', serif;
       text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      text-align: center;
     }
+
     .intro {
       text-align: center;
       max-width: 960px;
@@ -69,38 +76,64 @@
       font-size: 18px;
       line-height: 1.8;
     }
+
+    .tiles-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .tiles-section h2 {
+      font-size: 28px;
+      color: #b89c67;
+      margin-bottom: 30px;
+      font-family: 'Playfair Display', serif;
+    }
+
     .tiles {
       display: flex;
       justify-content: center;
       gap: 40px;
-      margin: 40px auto 80px;
+      flex-wrap: wrap;
       max-width: 1000px;
-      padding: 0 20px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
     }
+
     .tile {
       background-color: white;
       border-radius: 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       text-align: center;
       padding: 30px 20px;
-      flex: 1;
+      flex: 1 1 300px;
       cursor: pointer;
       transition: transform 0.2s;
     }
+
     .tile:hover {
       transform: translateY(-5px);
     }
+
     .tile img {
       width: 80px;
       height: 80px;
       margin-bottom: 20px;
+      filter: brightness(0) saturate(100%) sepia(21%) saturate(1160%) hue-rotate(11deg) brightness(92%) contrast(89%);
     }
-    .tile h2 {
+
+    .tile h3 {
       font-size: 22px;
       margin-bottom: 10px;
       color: #b89c67;
       font-family: 'Playfair Display', serif;
     }
+
+    .tile p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444;
+    }
+
     footer {
       background: #f3f1ec;
       padding: 60px 20px;
@@ -130,18 +163,23 @@
   </div>
 
   <div class="intro">
-    Willkommen bei Lafranchi Consulting – Ihrem Partner für professionelle HR-Lösungen und wirksame Entwicklung. 
+    Willkommen bei Lafranchi Consulting – Ihrem Partner für professionelle HR-Lösungen und wirksame Entwicklung.
     Ob als externe Personalabteilung oder als Sparringspartnerin für persönliches Wachstum: Ich kombiniere Struktur mit Empathie, Strategie mit Intuition – für Resultate, die wirken.
   </div>
 
-  <div class="tiles">
-    <div class="tile" onclick="location.href='unternehmen.html'">
-      <img src="icon-hr.jpeg" alt="HR Icon">
-      <h2>HR & Organisation</h2>
-    </div>
-    <div class="tile" onclick="location.href='coaching.html'">
-      <img src="icon-coaching.jpeg" alt="Coaching Icon">
-      <h2>Coaching & Entwicklung</h2>
+  <div class="tiles-section">
+    <h2>Was ich für Sie tue</h2>
+    <div class="tiles">
+      <div class="tile" onclick="location.href='unternehmen.html'">
+        <img src="icon-hr.jpeg" alt="HR Icon">
+        <h3>HR & Organisation</h3>
+        <p>Externe HR-Leitung, effiziente Prozesse und praxisnahe Personalberatung für KMU und Startups.</p>
+      </div>
+      <div class="tile" onclick="location.href='coaching.html'">
+        <img src="icon-coaching.jpeg" alt="Coaching Icon">
+        <h3>Coaching & Entwicklung</h3>
+        <p>Individuelle Begleitung mit Tiefgang: lösungsorientiertes Coaching für Klarheit, Wandel und Wachstum.</p>
+      </div>
     </div>
   </div>
 
