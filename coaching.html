@@ -7,44 +7,103 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    .hero-coaching {
-      background: url('coaching-banner.jpg')  cente 20%/cover no-repeat;
-      color: white;
-      padding: 100px 20px;
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf6;
+      color: #2e2e2e;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
       text-align: center;
     }
-    .hero-coaching h1,
-    .hero-coaching p {
-      max-width: 800px;
-      margin: 0 auto 15px;
-      padding: 0 10px;
+
+    .logo {
+      width: 260px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #b89c67;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
       font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #2e2e2e;
+      text-align: center;
     }
-    .hero-coaching h1 {
-      font-size: 42px;
-    }
-    .hero-coaching p {
-      font-size: 20px;
-    }
+
     .section {
       max-width: 960px;
-      margin: 0 auto 60px;
+      margin: 60px auto;
       padding: 0 20px;
     }
+
     .section h2 {
       color: #b89c67;
       font-family: 'Playfair Display', serif;
       font-size: 26px;
       margin-bottom: 20px;
+      text-align: center;
     }
+
     .section p, .section li {
       font-size: 17px;
       line-height: 1.7;
     }
-    .symbol-image {
-      display: block;
-      max-width: 140px;
-      margin: 0 auto 20px;
+
+    .cta-link {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #b89c67;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .cta-link:hover {
+      background-color: #a38854;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 40px 20px;
+      background: #f3f1ec;
+    }
+
+    footer .legal-links {
+      margin-top: 10px;
+    }
+
+    footer .legal-links a {
+      margin: 0 10px;
+      color: #888;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    footer .legal-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -55,39 +114,34 @@
       <a href="index.html">Start</a>
       <a href="unternehmen.html">HR & Organisation</a>
       <a href="coaching.html">Coaching & Entwicklung</a>
+      <a href="methode.html">Lafranchi-Methode KERN</a>
       <a href="ueber.html">Über mich</a>
-      <a href="blog.html">Insights</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
-  <section class="hero-coaching">
-    <h1>Persönlich wachsen. Klarer sehen. Wirksam handeln.</h1>
-    <p>Ich begleite Menschen in beruflichen oder privaten Umbruchsituationen – mit psychologischem Know-how, systemischem Verständnis und einer klaren Struktur. Direkt, empathisch, wachrüttelnd.</p>
-  </section>
-
   <main>
     <section class="section">
-      <img src="icon-coaching.png" alt="Icon Coaching" class="symbol-image">
-      <h2>Coaching & Beratung für Privatpersonen</h2>
+      <h1>Coaching & Entwicklung</h1>
+      <p>Ich begleite Menschen in beruflichen und privaten Umbrüchen mit Struktur, Empathie und psychologischer Tiefe. Im Zentrum steht Ihre persönliche Weiterentwicklung – lösungsorientiert, pragmatisch und klar.</p>
+    </section>
+
+    <section class="section">
+      <h2>Schwerpunkte</h2>
       <ul>
-        <li>Krisenintervention & emotionale Stabilisierung</li>
-        <li>Veränderungsprozesse & Persönlichkeitsentwicklung</li>
-        <li>Umgang mit Verlust, Trennung, Überforderung</li>
-        <li>Erkennen & Durchbrechen von Beziehungsmustern</li>
-        <li>Selbstsabotage auflösen & Selbstwirksamkeit stärken</li>
+        <li>Berufliche Neuausrichtung & Karriere-Coaching</li>
+        <li>Selbstführung & persönliche Klarheit</li>
+        <li>Emotionale Stabilität in Umbruchphasen</li>
+        <li>Persönlichkeitsentwicklung & Selbstwirksamkeit</li>
+        <li>Beziehungsdynamiken & persönliche Grenzen</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Coaching für Führungskräfte & Unternehmen</h2>
-      <ul>
-        <li>Reflexion von Führungsverhalten und Wirkung</li>
-        <li>Begleitung in anspruchsvollen Change-Prozessen</li>
-        <li>Stärkung der emotionalen Intelligenz und Klarheit in der Kommunikation</li>
-        <li>Rollenklärung & Umgang mit Macht, Autorität, Verantwortung</li>
-        <li>Persönliche Entwicklung als strategisches Element Ihrer Führung</li>
-      </ul>
+      <h2>Lafranchi-Methode KERN</h2>
+      <p>Meine Arbeit basiert auf der <strong>Lafranchi-Methode KERN</strong> – einem klaren, fundierten 4-Phasen-Modell für nachhaltige persönliche Entwicklung:</p>
+      <p><strong>Klarsicht. Emotionen. Richtung. Nachhaltigkeit.</strong></p>
+      <a href="methode.html" class="cta-link">Mehr zur Lafranchi-Methode KERN</a>
     </section>
   </main>
 
