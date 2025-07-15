@@ -1,48 +1,145 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Die Lafranchi-Methode® – Klarheit schaffen. Veränderung ermöglichen.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lafranchi-Methode KERN – Lafranchi Consulting</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    .banner {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      margin-bottom: 40px;
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf6;
+      color: #2e2e2e;
     }
-    .content {
+
+    header {
+      background-color: white;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    .logo {
+      width: 260px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #b89c67;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #b89c67;
+      text-align: center;
+    }
+
+    .section {
       max-width: 960px;
-      margin: 0 auto;
-      padding: 0 20px 60px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
-    .content h1, .content h2 {
+
+    .section h2 {
       color: #b89c67;
       font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-align: center;
     }
-    .kern-steps {
+
+    .section p {
+      font-size: 17px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .kern-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
       margin-top: 40px;
     }
+
     .kern-box {
-      background: #fdfaf6;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      padding: 40px 30px;
       text-align: center;
+      transition: transform 0.3s ease;
+      border-top: 6px solid #b89c67;
     }
+
+    .kern-box:hover {
+      transform: translateY(-6px);
+    }
+
     .kern-box h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #2e2e2e;
+      color: #b89c67;
+      font-size: 22px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
     }
+
     .kern-box p {
-      font-size: 15px;
-      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .cta-link {
+      display: inline-block;
+      margin-top: 50px;
+      background-color: #b89c67;
+      color: white;
+      padding: 14px 36px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .cta-link:hover {
+      background-color: #a1824d;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 40px 20px;
+      background: #f3f1ec;
+      margin-top: 80px;
+    }
+
+    footer .legal-links {
+      margin-top: 10px;
+    }
+
+    footer .legal-links a {
+      margin: 0 10px;
+      color: #888;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    footer .legal-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -53,39 +150,42 @@
       <a href="index.html">Start</a>
       <a href="unternehmen.html">HR & Organisation</a>
       <a href="coaching.html">Coaching & Entwicklung</a>
+      <a href="methode.html">Lafranchi-Methode KERN</a>
       <a href="ueber.html">Über mich</a>
-      <a href="blog.html">Insights</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
-  <img src="method-banner.jpg" alt="Lafranchi Methode Banner" class="banner">
+  <main>
+    <section class="section">
+      <h1>Lafranchi-Methode KERN</h1>
+      <p><strong>Die Methode, die Klarheit schafft, Blockaden auflöst – und echte Veränderung möglich macht.</strong></p>
+      <p>Du steckst fest, drehst dich im Kreis oder verlierst dich im Gedankenchaos? Genau da setzt die Lafranchi-Methode KERN an: ein psychologisch fundiertes 4-Phasen-Modell, das innere Prozesse sichtbar, greifbar und vor allem veränderbar macht. Strukturiert. Tiefgehend. Nachhaltig.</p>
+      <p>Entwickelt aus der Praxis für Menschen in Bewegung – mit dem Anspruch, persönliche Entwicklung nicht nur fühlbar, sondern auch sichtbar messbar zu machen.</p>
 
-  <main class="content">
-    <h1>Die Lafranchi-Methode®</h1>
-    <p>Viele Coachings oder Beratungen bleiben auf der Oberfläche oder verlieren sich in Theorien. Die Lafranchi-Methode® geht einen anderen Weg: konfrontativ, pragmatisch, emotional intelligent – und vor allem: tiefgreifend wirksam.</p>
+      <div class="kern-grid">
+        <div class="kern-box">
+          <h3>K – Klarsicht</h3>
+          <p>Wir schaffen Ordnung im Chaos. Du erkennst Muster, Dynamiken und blinde Flecken. Was vorher diffus war, wird klar und benennbar. Ein mentaler Reset – ohne Beschönigung, aber mit Struktur.</p>
+        </div>
+        <div class="kern-box">
+          <h3>E – Emotionen</h3>
+          <p>Gefühle sind keine Störung – sie sind der Schlüssel. Du verstehst, warum dich bestimmte Dinge so sehr treffen. Verletzungen werden nicht verdrängt, sondern eingeordnet. Das öffnet Heilungsräume und emotionale Stärke.</p>
+        </div>
+        <div class="kern-box">
+          <h3>R – Richtung</h3>
+          <p>Neue Ziele entstehen aus innerer Klarheit. Wir entwickeln konkrete Handlungsperspektiven – im Job, in Beziehungen oder für dich selbst. Keine leeren Affirmationen, sondern echte Entscheidungen mit Tragweite.</p>
+        </div>
+        <div class="kern-box">
+          <h3>N – Nachhaltigkeit</h3>
+          <p>Transformation braucht Wiederholung. Du bekommst Tools, Strukturen und Routinen, die Veränderung im Alltag festigen. Rückfälle gehören dazu – aber du lernst, stabil zu bleiben.</p>
+        </div>
+      </div>
 
-    <h2>Das KERN-Modell</h2>
-    <p>Die Methode folgt einem 4-Phasen-Modell, das Klarheit schafft und nachhaltige Veränderung ermöglicht – ob in der persönlichen Entwicklung oder im Unternehmenskontext:</p>
+      <p><strong>Diese Methode ist nicht für alle. Aber wenn du bereit bist, hinzuschauen und wirklich etwas zu verändern, dann ist sie für dich.</strong></p>
 
-    <div class="kern-steps">
-      <div class="kern-box">
-        <h3>K – Klarsicht</h3>
-        <p>Wir analysieren die Ausgangslage messerscharf. Fragebögen, Spiegelung, Persönlichkeitsprofil. Unverblümt, ehrlich, direkt.</p>
-      </div>
-      <div class="kern-box">
-        <h3>E – Emotion</h3>
-        <p>Ohne emotionale Tiefe keine Veränderung. Wir öffnen, benennen, fühlen, verarbeiten. Behutsam, aber zielgerichtet.</p>
-      </div>
-      <div class="kern-box">
-        <h3>R – Richtung</h3>
-        <p>Was brauchst du wirklich? Wohin willst du? Wir formen ein Zielbild, entwickeln Perspektiven – und nutzen deine Stärken als Werkzeug.</p>
-      </div>
-      <div class="kern-box">
-        <h3>N – Nachhaltigkeit</h3>
-        <p>Dranbleiben, wachsen, rückfällig werden, neu ansetzen. Ich begleite dich als Sparringspartnerin mit Herz, Verstand und Konsequenz.</p>
-      </div>
-    </div>
+      <a href="kontakt.html" class="cta-link">Jetzt Erstgespräch vereinbaren</a>
+    </section>
   </main>
 
   <footer>
