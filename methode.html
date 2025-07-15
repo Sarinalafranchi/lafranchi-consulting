@@ -42,6 +42,13 @@
       text-decoration: underline;
     }
 
+    .image-banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin-bottom: 40px;
+    }
+
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 36px;
@@ -70,25 +77,27 @@
       text-align: center;
     }
 
-    .kern-grid {
+    .kern-flow {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      margin-top: 40px;
+      grid-template-columns: 1fr 40px 1fr;
+      grid-template-rows: auto auto;
+      gap: 40px;
+      align-items: center;
+      max-width: 1000px;
+      margin: 60px auto;
     }
 
     .kern-box {
       background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 30px 20px;
       text-align: center;
-      transition: transform 0.3s ease;
-      border-top: 6px solid #b89c67;
+      transition: transform 0.2s ease;
     }
 
     .kern-box:hover {
-      transform: translateY(-6px);
+      transform: translateY(-5px);
     }
 
     .kern-box h3 {
@@ -99,17 +108,25 @@
     }
 
     .kern-box p {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.6;
-      color: #444;
+      color: #555;
+    }
+
+    .arrow {
+      width: 40px;
+      height: 40px;
+      background: url('arrow-down.svg') center center no-repeat;
+      background-size: contain;
+      margin: 0 auto;
     }
 
     .cta-link {
       display: inline-block;
-      margin-top: 50px;
+      margin-top: 40px;
       background-color: #b89c67;
       color: white;
-      padding: 14px 36px;
+      padding: 12px 28px;
       text-decoration: none;
       border-radius: 4px;
       font-weight: 600;
@@ -156,33 +173,36 @@
     </nav>
   </header>
 
+  <img src="methode-banner.jpg" alt="Symbolbild Lafranchi-Methode" class="image-banner">
+
   <main>
     <section class="section">
       <h1>Lafranchi-Methode KERN</h1>
-      <p><strong>Die Methode, die Klarheit schafft, Blockaden auflöst – und echte Veränderung möglich macht.</strong></p>
-      <p>Du steckst fest, drehst dich im Kreis oder verlierst dich im Gedankenchaos? Genau da setzt die Lafranchi-Methode KERN an: ein psychologisch fundiertes 4-Phasen-Modell, das innere Prozesse sichtbar, greifbar und vor allem veränderbar macht. Strukturiert. Tiefgehend. Nachhaltig.</p>
-      <p>Entwickelt aus der Praxis für Menschen in Bewegung – mit dem Anspruch, persönliche Entwicklung nicht nur fühlbar, sondern auch sichtbar messbar zu machen.</p>
+      <p><strong>Veränderung braucht Richtung. Entwicklung braucht Struktur.</strong></p>
+      <p>Die Lafranchi-Methode KERN ist ein fundiertes 4-Phasen-Modell, das Klarheit schafft, emotionale Prozesse strukturiert begleitet und gezielte Veränderungen nachhaltig verankert. Sie hilft Menschen, sich selbst ehrlich zu begegnen, tiefer zu blicken – und loszulassen, was nicht mehr dient. Dabei geht es nicht um schöne Worte, sondern um den oft unbequemen Blick in den Spiegel: radikal ehrlich, manchmal schmerzhaft, aber immer befreiend.</p>
 
-      <div class="kern-grid">
+      <div class="kern-flow">
         <div class="kern-box">
           <h3>K – Klarsicht</h3>
-          <p>Wir schaffen Ordnung im Chaos. Du erkennst Muster, Dynamiken und blinde Flecken. Was vorher diffus war, wird klar und benennbar. Ein mentaler Reset – ohne Beschönigung, aber mit Struktur.</p>
+          <p>Wahrnehmen statt bewerten. In dieser Phase wird das Chaos geordnet: Muster erkennen, benennen, verstehen. Es entsteht eine ehrliche Bestandsaufnahme und mentale Ordnung.</p>
         </div>
+        <div class="arrow"></div>
         <div class="kern-box">
           <h3>E – Emotionen</h3>
-          <p>Gefühle sind keine Störung – sie sind der Schlüssel. Du verstehst, warum dich bestimmte Dinge so sehr treffen. Verletzungen werden nicht verdrängt, sondern eingeordnet. Das öffnet Heilungsräume und emotionale Stärke.</p>
+          <p>Hier entsteht emotionaler Zugang: Verletzlichkeit zeigen, Gefühle zulassen und verstehen. Die emotionale Tiefe ermöglicht echte Verbindung und Heilung.</p>
         </div>
         <div class="kern-box">
           <h3>R – Richtung</h3>
-          <p>Neue Ziele entstehen aus innerer Klarheit. Wir entwickeln konkrete Handlungsperspektiven – im Job, in Beziehungen oder für dich selbst. Keine leeren Affirmationen, sondern echte Entscheidungen mit Tragweite.</p>
+          <p>Von innerer Klarheit zu äußerer Zielsetzung. Neue Entscheidungen, Werte oder Perspektiven werden bewusst formuliert – mit echtem Commitment und Zukunftsorientierung.</p>
         </div>
+        <div class="arrow"></div>
         <div class="kern-box">
           <h3>N – Nachhaltigkeit</h3>
-          <p>Transformation braucht Wiederholung. Du bekommst Tools, Strukturen und Routinen, die Veränderung im Alltag festigen. Rückfälle gehören dazu – aber du lernst, stabil zu bleiben.</p>
+          <p>Stabilisierung und Integration im Alltag. Rückschläge antizipieren, Werkzeuge festigen, Routinen etablieren. Persönliche Entwicklung wird zur gelebten Realität.</p>
         </div>
       </div>
 
-      <p><strong>Diese Methode ist nicht für alle. Aber wenn du bereit bist, hinzuschauen und wirklich etwas zu verändern, dann ist sie für dich.</strong></p>
+      <p style="margin-top: 50px; font-style: italic; text-align: center; max-width: 720px; margin-left: auto; margin-right: auto;">Diese Methode ist nicht für jeden – sondern für Menschen, die bereit sind, in den Spiegel zu schauen, Verantwortung zu übernehmen und an der Wurzel etwas zu verändern.</p>
 
       <a href="kontakt.html" class="cta-link">Jetzt Erstgespräch vereinbaren</a>
     </section>
