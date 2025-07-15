@@ -2,41 +2,85 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lafranchi Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über mich – Lafranchi Consulting</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    .ueber-container {
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf6;
+      color: #2e2e2e;
+    }
+    header {
+      background-color: white;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+    .logo {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #b89c67;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    h1 {
+      color: #b89c67;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .about-container {
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+      flex-direction: row;
+      align-items: flex-start;
       justify-content: center;
-      gap: 40px;
-      max-width: 1000px;
+      gap: 50px;
+      max-width: 1200px;
       margin: 60px auto;
       padding: 0 20px;
     }
-    .ueber-text {
-      flex: 1 1 460px;
+    .about-text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.8;
     }
-    .ueber-text h1 {
-      color: #b89c67;
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
-      margin-bottom: 20px;
+    .about-image {
+      flex: 0 0 300px;
     }
-    .ueber-text p {
-      font-size: 17px;
-      line-height: 1.7;
-    }
-    .ueber-image {
-      flex: 1 1 320px;
-      max-width: 320px;
-    }
-    .ueber-image img {
+    .about-image img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
+    }
+    blockquote {
+      font-style: italic;
+      font-size: 20px;
+      color: #6b6b6b;
+      text-align: center;
+      margin: 40px auto 0;
+      max-width: 800px;
+    }
+    footer {
+      background: #f3f1ec;
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+      border-top: 1px solid #e4e4e4;
     }
   </style>
 </head>
@@ -53,27 +97,30 @@
     </nav>
   </header>
 
-  <main>
-    <section class="ueber-container">
-      <div class="ueber-image">
-        <img src="profilbild.jpg" alt="Sarina Lafranchi">
-      </div>
-      <div class="ueber-text">
-        <h1>Über mich</h1>
-        <p>Ich bin Sarina Lafranchi – Ihre Partnerin für Klarheit, Struktur und menschliche Stärke. Als HR-Fachfrau mit eidg. Fachausweis und langjähriger Erfahrung als HR-Leiterin in anspruchsvollen KMU-Umfeldern kenne ich die operativen und strategischen Herausforderungen moderner Unternehmen.</p>
-        <p>Mit einem psychologisch geschulten Blick, tiefem Verständnis für Veränderungsprozesse und einer klaren, lösungsorientierten Kommunikation unterstütze ich meine Kund:innen individuell, wirkungsvoll und nachhaltig – sowohl im Aufbau funktionierender HR-Strukturen als auch in der persönlichen Entwicklung.</p>
-        <p>Ich bin Berufsbildnerin, Prüfungsexpertin für das Qualifikationsverfahren der kaufmännischen Grundbildung, leidenschaftliche Strategin – und Pianistin.</p>
-        <p><em>„Menschen entwickeln Unternehmen – und umgekehrt.“</em></p>
-      </div>
-    </section>
-  </main>
+  <h1>Über mich</h1>
+
+  <div class="about-container">
+    <div class="about-text">
+      <p>Als HR-Expertin mit eidg. Fachausweis verfüge ich über langjährige Erfahrung als HR-Managerin in KMU-Strukturen mit industriellem Hintergrund. Ich bin Berufsbildnerin und offizielle Prüfungsexpertin für das Qualifikationsverfahren der kaufmännischen Grundbildung – und bringe zusätzlich ein fundiertes psychologisches Verständnis mit, welches meine Arbeit auf allen Ebenen ergänzt und vertieft.</p>
+
+      <p>Ich verbinde Strategie mit Menschlichkeit, Systematik mit Einfühlungsvermögen. Ob Aufbau neuer Strukturen, Optimierung bestehender Prozesse oder die Begleitung individueller Veränderungsprozesse – ich bringe Klarheit, Konsequenz und Herz in jedes Projekt ein.</p>
+
+      <p>Ich verstehe mich nicht nur als Dienstleisterin, sondern als Sparringspartnerin auf Augenhöhe – direkt, ehrlich und wirkungsorientiert. Meine Kundinnen und Kunden schätzen meine Fähigkeit, das Wesentliche schnell zu erkennen und komplexe Situationen strukturiert zu lösen.</p>
+
+      <p>Meine Stärke liegt im Gesamtblick: Ich analysiere, hinterfrage, ordne neu – immer mit dem Ziel, echte Veränderung zu bewirken. Dabei nutze ich mein umfassendes Fachwissen, meine psychologische Tiefe sowie die erprobte Methodik meines eigenen KERN-Modells.</p>
+
+      <p>Was mich zusätzlich ausmacht: Ich bin ausgebildete Pianistin – und arbeite mit derselben Hingabe, Disziplin und Sensibilität wie in der Musik. Präzision und Emotion gehören für mich zusammen.</p>
+    </div>
+    <div class="about-image">
+      <img src="Profilbild.jpg" alt="Profilbild Sarina Lafranchi">
+    </div>
+  </div>
+
+  <blockquote>„Klarheit entsteht nicht durch Denken allein – sondern durch das mutige Hinschauen.“</blockquote>
 
   <footer>
-    © 2025 Lafranchi Consulting
-    <div class="legal-links">
-      <a href="#">Datenschutz</a>
-      <a href="#">Impressum</a>
-    </div>
+    © 2025 Lafranchi Consulting<br>
+    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
   </footer>
 </body>
 </html>
