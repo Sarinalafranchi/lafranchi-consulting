@@ -22,23 +22,18 @@
     }
 
     .logo {
-      width: 220px;
-      max-width: 100%;
-      height: auto;
+      width: 260px;
       margin-bottom: 10px;
     }
 
     nav {
       margin-top: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
     }
 
     nav a {
       color: #b89c67;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: 600;
       font-size: 15px;
     }
@@ -64,7 +59,7 @@
 
     .section {
       max-width: 960px;
-      margin: 40px auto;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
@@ -85,6 +80,7 @@
     .kern-flow {
       display: grid;
       grid-template-columns: 1fr 40px 1fr;
+      grid-template-rows: auto auto;
       gap: 40px;
       align-items: center;
       max-width: 1000px;
@@ -132,7 +128,7 @@
       color: white;
       padding: 12px 28px;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 4px;
       font-weight: 600;
     }
 
@@ -146,7 +142,6 @@
       padding: 40px 20px;
       background: #f3f1ec;
       margin-top: 80px;
-      border-top: 1px solid #ddd;
     }
 
     footer .legal-links {
@@ -155,42 +150,13 @@
 
     footer .legal-links a {
       margin: 0 10px;
-      color: #666;
+      color: #888;
       text-decoration: none;
       font-size: 13px;
     }
 
     footer .legal-links a:hover {
       text-decoration: underline;
-    }
-
-    /* ---------- Responsive Anpassungen ---------- */
-    @media (max-width: 992px) {
-      h1 { font-size: 30px; }
-      .section p { font-size: 16px; }
-    }
-
-    @media (max-width: 768px) {
-      nav a { font-size: 14px; }
-      .kern-flow {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      .arrow {
-        transform: rotate(90deg); /* Pfeil zur Seite drehen für Mobile */
-      }
-      .kern-box { padding: 20px 15px; }
-      .kern-box h3 { font-size: 20px; }
-    }
-
-    @media (max-width: 480px) {
-      .logo { width: 160px; }
-      h1 { font-size: 24px; }
-      .section { margin: 20px auto; padding: 0 12px; }
-      .section p { font-size: 15px; }
-      .kern-box h3 { font-size: 18px; }
-      .kern-box p { font-size: 14px; }
-      .cta-link { width: 100%; text-align: center; padding: 14px; }
     }
   </style>
 </head>
@@ -213,32 +179,30 @@
     <section class="section">
       <h1>Lafranchi-Methode KERN</h1>
       <p><strong>Veränderung braucht Richtung. Entwicklung braucht Struktur.</strong></p>
-      <p>Die Lafranchi-Methode KERN ist ein fundiertes 4-Phasen-Modell, das Klarheit schafft, emotionale Prozesse strukturiert begleitet und gezielte Veränderungen nachhaltig verankert...</p>
+      <p>Die Lafranchi-Methode KERN ist ein fundiertes 4-Phasen-Modell, das Klarheit schafft, emotionale Prozesse strukturiert begleitet und gezielte Veränderungen nachhaltig verankert. Sie hilft Menschen, sich selbst ehrlich zu begegnen, tiefer zu blicken – und loszulassen, was nicht mehr dient. Dabei geht es nicht um schöne Worte, sondern um den oft unbequemen Blick in den Spiegel: radikal ehrlich, manchmal schmerzhaft, aber immer befreiend.</p>
 
       <div class="kern-flow">
         <div class="kern-box">
           <h3>K – Klarsicht</h3>
-          <p>Wahrnehmen statt bewerten...</p>
+          <p>Wahrnehmen statt bewerten. In dieser Phase wird das Chaos geordnet: Muster erkennen, benennen, verstehen. Es entsteht eine ehrliche Bestandsaufnahme und mentale Ordnung.</p>
         </div>
         <div class="arrow"></div>
         <div class="kern-box">
           <h3>E – Emotionen</h3>
-          <p>Hier entsteht emotionaler Zugang...</p>
+          <p>Hier entsteht emotionaler Zugang: Verletzlichkeit zeigen, Gefühle zulassen und verstehen. Die emotionale Tiefe ermöglicht echte Verbindung und Heilung.</p>
         </div>
         <div class="kern-box">
           <h3>R – Richtung</h3>
-          <p>Von innerer Klarheit zu äusserer Zielsetzung...</p>
+          <p>Von innerer Klarheit zu äußerer Zielsetzung. Neue Entscheidungen, Werte oder Perspektiven werden bewusst formuliert – mit echtem Commitment und Zukunftsorientierung.</p>
         </div>
         <div class="arrow"></div>
         <div class="kern-box">
           <h3>N – Nachhaltigkeit</h3>
-          <p>Stabilisierung und Integration...</p>
+          <p>Stabilisierung und Integration im Alltag. Rückschläge antizipieren, Werkzeuge festigen, Routinen etablieren. Persönliche Entwicklung wird zur gelebten Realität.</p>
         </div>
       </div>
 
-      <p style="margin-top: 40px; font-style: italic; text-align: center; max-width: 720px; margin-left: auto; margin-right: auto;">
-        Diese Methode ist nicht für jeden – sondern für Menschen, die bereit sind, in den Spiegel zu schauen...
-      </p>
+      <p style="margin-top: 50px; font-style: italic; text-align: center; max-width: 720px; margin-left: auto; margin-right: auto;">Diese Methode ist nicht für jeden – sondern für Menschen, die bereit sind, in den Spiegel zu schauen, Verantwortung zu übernehmen und an der Wurzel etwas zu verändern.</p>
 
       <a href="kontakt.html" class="cta-link">Jetzt Erstgespräch vereinbaren</a>
     </section>
