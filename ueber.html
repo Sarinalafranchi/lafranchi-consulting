@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Über mich – Lafranchi Consulting</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
-    /* Basis */
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -15,57 +14,50 @@
       color: #2e2e2e;
     }
     header {
-      background-color: #fff;
+      background-color: white;
       padding: 20px;
       border-bottom: 1px solid #eee;
       text-align: center;
     }
     .logo {
       width: 200px;
-      max-width: 100%;
-      height: auto;
       margin-bottom: 10px;
     }
     nav {
       margin-top: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 16px;
     }
     nav a {
       color: #b89c67;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: 600;
       font-size: 15px;
     }
-    nav a:hover { text-decoration: underline; }
-
-    h1, h2 { font-family: 'Playfair Display', serif; }
-
-    /* Banner */
-    .banner { position: relative; }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    .banner {
+      position: relative;
+    }
     .banner img {
       width: 100%;
-      max-height: 420px;
+      max-height: 400px;
       object-fit: cover;
-      display: block;
     }
     .banner-text {
       position: absolute;
-      left: 50%;
       bottom: 30px;
+      left: 50%;
       transform: translateX(-50%);
-      color: #fff;
+      color: white;
       font-size: 30px;
       font-family: 'Playfair Display', serif;
-      text-shadow: 0 2px 4px rgba(0,0,0,.5);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
       text-align: center;
-      max-width: 90%;
-      padding: 0 8px;
     }
-
-    /* Content */
     .section {
       max-width: 1000px;
       margin: 60px auto;
@@ -74,11 +66,10 @@
       flex-wrap: wrap;
       align-items: flex-start;
       gap: 40px;
-      box-sizing: border-box;
     }
     .section-text {
-      flex: 1 1 420px;
-      min-width: 280px;
+      flex: 1;
+      min-width: 300px;
     }
     .section-text h1 {
       font-size: 32px;
@@ -102,56 +93,26 @@
       margin-top: 10px;
     }
     .profile-img {
-      flex: 0 0 300px;
+      flex-shrink: 0;
       max-width: 300px;
       width: 100%;
-      height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-
     .quote {
       text-align: center;
       font-style: italic;
       font-size: 18px;
-      margin: 50px 20px 20px;
+      margin: 60px 20px 20px;
       color: #555;
     }
-
-    /* Footer */
     footer {
       background: #f3f1ec;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
       font-size: 14px;
       margin-top: 60px;
       border-top: 1px solid #e4e4e4;
-    }
-
-    /* Responsive Breakpoints */
-    @media (max-width: 992px) {
-      .banner img { max-height: 380px; }
-      .banner-text { font-size: 26px; bottom: 24px; }
-      .section { margin: 40px auto; }
-      .section-text h1 { font-size: 28px; }
-      .section-text p { font-size: 16px; }
-    }
-    @media (max-width: 768px) {
-      nav a { font-size: 14px; }
-      .banner img { max-height: 340px; }
-      .banner-text { font-size: 22px; bottom: 20px; }
-      .section { gap: 28px; }
-      .profile-img { max-width: 260px; }
-    }
-    @media (max-width: 480px) {
-      .logo { width: 160px; }
-      .banner img { max-height: 300px; }
-      .banner-text { font-size: 18px; bottom: 16px; }
-      .section { margin: 30px auto; padding: 0 12px; }
-      .section-text h1 { font-size: 24px; }
-      .section-text p { font-size: 15px; line-height: 1.7; }
-      .profile-img { max-width: 100%; }
-      .quote { font-size: 16px; margin-top: 36px; }
     }
   </style>
 </head>
@@ -177,6 +138,28 @@
     <section class="section">
       <div class="section-text">
         <h1>Sarina Lafranchi</h1>
-        <p>Als erfahrene HR-Leiterin und mit fundiertem psychologischen Hintergrund begleite ich seit über 15 Jahren Menschen und Organisationen durch anspruchsvolle Veränderungsprozesse – mit Klarheit, Empathie und Struktur.</p>
+        <p>Als erfahrene HR Leiterin und fundiertem psychologischem Hintergrund begleite ich seit über 15 Jahren Menschen und Organisationen durch anspruchsvolle Veränderungsprozesse – mit Klarheit, Empathie und Struktur.</p>
 
-        <p>Ich bringe Fachkompetenz und Führungserfahrung mit, denke systemisch und handle pragmatisch. Als externe HR-Leiterin, Business Partnerin und Coach übernehme ich sowohl strategische Aufgaben als auch klassische HR-Services wie Personaladministration
+        <p>Ich bringe Fachkompetenz und Führungserfahrung mit, denke systemisch und handle pragmatisch. Als externe HR-Leiterin, Business Partnerin und Coach übernehme ich sowohl strategische Aufgaben als auch klassische HR-Services wie Personaladministration und Payroll – vollständig oder in Teilen ausgelagert.</p>
+
+        <p>Meine Stärke ist die Verbindung aus Tiefgang und Umsetzungskraft: Ich höre zu, analysiere messerscharf und begleite Veränderung nachhaltig – für Einzelpersonen wie für Unternehmen.</p>
+
+        <p>Wenn Sie jemanden suchen, der nicht nur redet, sondern mit anpackt – mit Haltung, Verstand und Herz – dann lade ich Sie ein, mich kennenzulernen.</p>
+
+        <div class="grussformel">
+          Herzlich,<br>
+          <div class="signature">Sarina Lafranchi</div>
+        </div>
+      </div>
+      <img src="profilbild.jpg" alt="Profilbild Sarina Lafranchi" class="profile-img" />
+    </section>
+
+    <div class="quote">„Empathie ohne Klarheit ist nett. Klarheit ohne Empathie ist hart. Die Kombination ist Wirkung.“</div>
+  </main>
+
+  <footer>
+    © 2025 Lafranchi Consulting<br>
+    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
+  </footer>
+</body>
+</html>
