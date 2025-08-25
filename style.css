@@ -1,3 +1,4 @@
+/* ==== Dein bestehender Basis-Style (unverändert) ==== */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -42,7 +43,6 @@ footer {
   padding: 40px 20px;
   text-align: center;
   padding: 100px 20px;
-  
   font-size: 14px;
   margin-top: 60px;
   border-top: 1px solid #e4e2dc;
@@ -69,7 +69,7 @@ img {
   display: block;
 }
 
-/* Responsives Design */
+/* Responsives Design (bestehend) */
 @media screen and (max-width: 768px) {
   nav a {
     display: block;
@@ -91,6 +91,7 @@ img {
     margin: 0 auto 30px;
   }
 }
+
 /* Standardgröße auf Unterseiten */
 .logo {
   max-width: 180px;
@@ -104,3 +105,76 @@ img {
   margin: 60px auto 40px auto;
 }
 
+
+
+/* ==== Ergänzungen NUR für Mobile-Freundlichkeit (additiv) ==== */
+
+/* Hilfsregeln (ohne Einfluss auf Desktop-Layout) */
+.table-wrap { overflow-x: auto; }
+
+/* Tablet-Bereich */
+@media (max-width: 992px) {
+  /* Allgemeine Abschnittsbreite */
+  .section { margin: 40px auto; padding: 0 20px; }
+
+  /* Überschriften und Hero/Banner-Text etwas kleiner */
+  .section-title, h1 { font-size: clamp(24px, 4vw, 32px); }
+  .hero-text, .banner-text { font-size: clamp(18px, 4vw, 28px); }
+
+  /* Intro-Texte etwas kompakter */
+  .section p, .intro { font-size: 16px; line-height: 1.7; }
+}
+
+/* Mobile-Bereich */
+@media (max-width: 768px) {
+  /* Navigation darf umbrechen und enger werden */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  nav a { margin: 4px 6px; font-size: 14px; }
+
+  /* Logos responsiv */
+  .logo { width: auto; max-width: 60vw; height: auto; }
+
+  /* Banner & Hero Blöcke */
+  .banner img, .image-banner { max-height: 340px; object-fit: cover; }
+  .hero { padding: 100px 15px 50px; }
+
+  /* Startseite: Tiles untereinander statt nebeneinander */
+  .tiles { gap: 24px; padding-bottom: 40px; }
+  .tiles .tile { flex: 1 1 100%; max-width: 420px; margin: 0 auto; }
+
+  /* Methode-KERN: Flow einspaltig; Pfeile quer */
+  .kern-flow { display: grid; grid-template-columns: 1fr !important; gap: 20px; }
+  .arrow { transform: rotate(90deg); width: 32px; height: 32px; margin: 0 auto; }
+
+  /* HR-Leistungen: Spalten stapeln (falls vorhanden) */
+  .cols { display: grid; grid-template-columns: 1fr !important; gap: 16px; }
+
+  /* Lesbarkeit allgemeiner Textblöcke */
+  .section p, .intro, .tile p { font-size: 16px; line-height: 1.7; text-align: center; }
+}
+
+/* Sehr kleine Geräte */
+@media (max-width: 480px) {
+  .banner img, .image-banner { max-height: 300px; }
+  .banner-text, .hero-text {
+    font-size: 18px;
+    bottom: 16px;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .section { padding: 0 12px; }
+  .section p, .tile p, .kern-box p { font-size: 15px; line-height: 1.7; }
+  .section-title, h1 { font-size: 24px; }
+
+  /* CTAs über volle Breite, besser klickbar */
+  .btn, .cta-link { width: 100%; text-align: center; padding: 12px 16px; }
+
+  /* Bilder (Profilbild etc.) sicher skaliert */
+  .profile-img { max-width: 100%; height: auto; }
+}
