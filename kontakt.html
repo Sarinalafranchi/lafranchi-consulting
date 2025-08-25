@@ -23,23 +23,17 @@
 
     .logo {
       width: 160px;
-      max-width: 100%;
-      height: auto;
       margin-bottom: 10px;
     }
 
     nav {
       margin-top: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
     }
 
     nav a {
       color: #b89c67;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 15px;
       font-weight: 600;
       font-size: 15px;
     }
@@ -77,72 +71,48 @@
     .kontakt-container input,
     .kontakt-container textarea {
       margin-bottom: 15px;
-      padding: 12px;
+      padding: 10px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 6px;
-      box-sizing: border-box;
     }
 
     .kontakt-container button {
       background-color: #b89c67;
       color: white;
-      padding: 14px;
+      padding: 12px;
       font-size: 16px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      transition: background-color 0.2s;
     }
 
     .kontakt-container button:hover {
       background-color: #a78958;
     }
 
-    .success-message {
-      background-color: #e6f4ea;
-      color: #2e7031;
-      border-left: 5px solid #2e7031;
-      padding: 15px;
-      margin-bottom: 20px;
-      display: none;
-    }
-
     footer {
       background: #f3f1ec;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
       font-size: 14px;
       margin-top: 60px;
       border-top: 1px solid #e4e4e4;
     }
 
+    footer .legal-links {
+      margin-top: 10px;
+    }
+
     footer .legal-links a {
       margin: 0 10px;
-      color: #555;
+      color: #888;
       text-decoration: none;
+      font-size: 13px;
     }
 
     footer .legal-links a:hover {
       text-decoration: underline;
-    }
-
-    /* ---------- Responsive Anpassungen ---------- */
-    @media (max-width: 768px) {
-      .kontakt-container { margin: 40px auto; }
-      .kontakt-container h1 { font-size: 24px; }
-      .kontakt-container p { font-size: 16px; }
-      nav a { font-size: 14px; margin: 5px; }
-    }
-
-    @media (max-width: 480px) {
-      .kontakt-container { margin: 30px auto; padding: 0 12px; }
-      .kontakt-container h1 { font-size: 22px; }
-      .kontakt-container p { font-size: 15px; }
-      .kontakt-container input,
-      .kontakt-container textarea { font-size: 15px; padding: 10px; }
-      .kontakt-container button { font-size: 15px; padding: 12px; }
-      .logo { width: 140px; }
     }
   </style>
 </head>
@@ -164,11 +134,13 @@
       <h1>Jetzt unverbindlich Kontakt aufnehmen</h1>
       <p>Sie möchten Ihre HR-Prozesse optimieren, externe Unterstützung in anspruchsvollen Phasen oder ein persönliches Coaching starten? Schreiben Sie mir – ich freue mich auf Ihre Nachricht und melde mich zeitnah bei Ihnen.</p>
 
-      <div class="success-message" id="successMessage">
-        Vielen Dank für Ihre Nachricht! Ich melde mich in Kürze bei Ihnen.
-      </div>
+      <!-- Kontaktformular mit Formsubmit -->
+      <form action="https://formsubmit.co/info@lafranchi-consulting.ch" method="POST">
+        <!-- Spam-Schutz -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Weiterleitung nach Absenden -->
+        <input type="hidden" name="_next" value="https://lafranchi-consulting.ch/danke.html">
 
-      <form action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST" onsubmit="showSuccessMessage(event)">
         <input type="text" name="name" placeholder="Ihr Name" required>
         <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
         <textarea name="message" rows="6" placeholder="Ihre Nachricht..." required></textarea>
@@ -184,25 +156,5 @@
       <a href="#">Impressum</a>
     </div>
   </footer>
-
-  <script>
-    function showSuccessMessage(event) {
-      event.preventDefault();
-      const form = event.target;
-      const data = new FormData(form);
-      fetch(form.action, {
-        method: "POST",
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(() => {
-        document.getElementById("successMessage").style.display = "block";
-        form.reset();
-      }).catch(error => {
-        alert("Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
-      });
-    }
-  </script>
 </body>
 </html>
